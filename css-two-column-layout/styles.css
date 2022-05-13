@@ -1,0 +1,16 @@
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  flex-basis: calc(100%/2);
+}
