@@ -5,6 +5,16 @@ h1 {
 
 body {
   margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+input {
+  background-color: white;
+  border: 2px solid rgb(211 82 75);
+  color: rgb(211 82 75);
+  padding: 10px 40px;
+  font-family: Karla, sans-serif;
+  font-weight: 600;
 }
 
 .container {
@@ -43,8 +53,8 @@ body {
   text-transform: uppercase;
 }
 
-.line-ht-2em {
-  line-height: 2em;
+.line-ht-1p5em {
+  line-height: 1.5em;
 }
 
 .text-align-center {
@@ -55,16 +65,16 @@ body {
   margin-top: 0;
 }
 
-.mt-20 {
+.ptb-60-20 {
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
 .prl-5perc {
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 
 .text-gray {
-  color: gray;
+  color: rgb(121 121 121);
 }
