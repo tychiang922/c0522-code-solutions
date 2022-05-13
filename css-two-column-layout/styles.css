@@ -1,6 +1,15 @@
+h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+body {
+  margin-top: 40px;
+}
+
 .container {
-  width: 90%;
-  margin: auto;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .row {
@@ -13,4 +22,49 @@
 
 .col-2 {
   flex-basis: calc(100%/2);
+}
+
+.justify-center {
+  justify-content: center;
+  margin: auto;
+}
+
+.karla-font-heavy {
+  font-family: Karla, sans-serif;
+  font-weight: 600;
+}
+
+.karla-font {
+  font-family: Karla, sans-serif;
+  font-weight: 400;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+.line-ht-2em {
+  line-height: 2em;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-20 {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.prl-5perc {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.text-gray {
+  color: gray;
 }
