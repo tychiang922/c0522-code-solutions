@@ -1,6 +1,7 @@
 h1 {
   font-size: 48px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
+  font-weight: 500;
 }
 
 body {
@@ -65,14 +66,23 @@ input {
   margin-top: 0;
 }
 
+.pt-30 {
+  padding-top: 30px;
+}
+
 .ptb-60-20 {
   padding-top: 60px;
   padding-bottom: 20px;
 }
 
 .prl-5perc {
-  padding-right: 4%;
-  padding-left: 4%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.prl-10perc {
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .text-gray {
