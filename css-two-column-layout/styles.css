@@ -13,7 +13,8 @@ input {
   background-color: white;
   border: 2px solid rgb(211 82 75);
   color: rgb(211 82 75);
-  padding: 10px 40px;
+  padding: 10px 50px;
+  font-size: 16px;
   font-family: Karla, sans-serif;
   font-weight: 600;
 }
@@ -66,12 +67,16 @@ input {
   margin-top: 0;
 }
 
+.pt-40 {
+  padding-top: 20px;
+}
+
 .pt-30 {
   padding-top: 30px;
 }
 
 .ptb-60-20 {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
