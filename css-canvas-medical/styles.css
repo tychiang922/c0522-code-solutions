@@ -1,0 +1,210 @@
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 29%;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  flex-basis: 100%;
+}
+
+.col-2 {
+  flex-basis: calc(100%/2);
+}
+
+.col-2-45ten {
+  flex-basis: calc(450%/10);
+}
+
+.col-2-55ten {
+  flex-basis: calc(550%/10);
+}
+
+.col-flex {
+  flex-basis: auto;
+  margin: auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.font-14px {
+  font-size: 16px;
+}
+
+.font-40px-w250 {
+  font-size: 40px;
+  font-weight: 250;
+}
+
+.font-avenir {
+  font-family: avenir, sans-serif;
+}
+
+.font-tiemp {
+  font-family: "Tiempos Headline", sans-serif;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.low-case {
+  text-transform: lowercase;
+}
+
+.txt-blue {
+  color: rgb(41 67 99);
+}
+
+.back-blue {
+  background-color: rgb(41 67 99);
+}
+
+.back-lightgray {
+  background-color: rgb(169 169 169 / 5%);
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-gray {
+  color: rgb(112 112 112);
+}
+
+.txt-align-center {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+  margin: auto;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.ht-100 {
+  height: 100%;
+}
+
+.underline {
+  border-bottom: 1px solid rgb(196 196 196);
+}
+
+.pl-6perc {
+  padding-left: 6%;
+}
+
+.pl-7perc {
+  padding-left: 7%;
+}
+
+.pr-6perc {
+  padding-right: 6%;
+}
+
+.pr-3perc {
+  padding-right: 3%;
+}
+
+.ptb-50px {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.row-1-ptb {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mt-60 {
+  margin-top: 70px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.back-hero {
+  width: 100%;
+  height: 550px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.start-button {
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 15px 50px;
+  border-radius: 4px;
+}
+
+.mtb-25 {
+  margin: 25px 0 25px 25px;
+}
+
+.width55p {
+  width: 55%;
+}
+
+.overlay {
+  background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%));
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.lh-2 {
+  line-height: 1.75em;
+}
+
+.lh-3p5 {
+  line-height: 3em;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.pt-0 {
+  margin-top: 0;
+}
+
+.pb-0 {
+  margin-bottom: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.pos-abs {
+  position: absolute;
+}
