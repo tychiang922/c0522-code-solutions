@@ -36,6 +36,14 @@ input {
   flex-basis: calc(100%/2);
 }
 
+.col-4 {
+  flex-basis: calc(100%/4);
+}
+
+.col-4-three {
+  flex-basis: calc(300%/4);
+}
+
 .justify-center {
   justify-content: center;
   margin: auto;
