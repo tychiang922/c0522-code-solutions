@@ -3,7 +3,7 @@ a {
 }
 
 .blue-logo {
-  width: 29%;
+  width: 40%;
 }
 
 .white-logo {
@@ -27,15 +27,15 @@ a {
   flex-basis: calc(100%/2);
 }
 
-.col-2-45ten {
-  flex-basis: calc(450%/10);
+.col-3 {
+  flex-basis: calc(100%/3);
 }
 
-.col-2-55ten {
-  flex-basis: calc(550%/10);
+.col-3-two {
+  flex-basis: calc(200%/3);
 }
 
-.col-2-1fourth {
+.col-4 {
   flex-basis: calc(100%/4);
 }
 
@@ -54,6 +54,10 @@ a {
 
 .font-16px {
   font-size: 16px;
+}
+
+.font-17px {
+  font-size: 17px;
 }
 
 .font-18px {
@@ -75,10 +79,6 @@ a {
 
 .font-weight-300 {
   font-weight: 300;
-}
-
-.font-17px {
-  font-size: 17px;
 }
 
 .font-19px {
@@ -171,6 +171,16 @@ a {
   padding-right: 7%;
 }
 
+.prl-6perc {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.prl-7perc {
+  padding-right: 7%;
+  padding-left: 7%;
+}
+
 .pr-2perc {
   padding-right: 2%;
 }
@@ -194,7 +204,7 @@ a {
 
 .row-1-ptb {
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .mt-70 {
@@ -351,4 +361,8 @@ a {
 
 .font-weight-500 {
   font-weight: 500;
+}
+
+.pl-row1 {
+  padding-left: 12%;
 }
