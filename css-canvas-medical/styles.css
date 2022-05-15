@@ -2,12 +2,16 @@ a {
   text-decoration: none;
 }
 
-img {
+.blue-logo {
   width: 29%;
 }
 
+.white-logo {
+  width: 26%;
+}
+
 .container {
-  max-width: 90%;
+  max-width: 94%;
   margin: auto;
 }
 
@@ -45,6 +49,10 @@ img {
 }
 
 .font-14px {
+  font-size: 14px;
+}
+
+.font-16px {
   font-size: 16px;
 }
 
@@ -69,8 +77,24 @@ img {
   font-weight: 300;
 }
 
+.font-17px {
+  font-size: 17px;
+}
+
+.font-19px {
+  font-size: 19px;
+}
+
+.font-21px {
+  font-size: 21px;
+}
+
 .font-20px {
   font-size: 20px;
+}
+
+.font-22px {
+  font-size: 22px;
 }
 
 .low-case {
@@ -97,6 +121,10 @@ img {
   color: white;
 }
 
+.txt-lightgray {
+  color: rgb(161 161 161);
+}
+
 .txt-gray {
   color: rgb(112 112 112);
 }
@@ -111,8 +139,8 @@ img {
 }
 
 .contact-button {
-  padding: 10px 20px;
-  border-radius: 3px;
+  padding: 12px 20px;
+  border-radius: 5px;
 }
 
 .ht-100 {
@@ -120,7 +148,7 @@ img {
 }
 
 .underline {
-  border-bottom: 1px solid rgb(196 196 196);
+  border-bottom: 1px solid rgba(196 196 196 /50%);
 }
 
 .pl-6perc {
@@ -131,12 +159,24 @@ img {
   padding-left: 7%;
 }
 
+.pr-10 {
+  padding-right: 10px;
+}
+
 .pr-6perc {
   padding-right: 6%;
 }
 
-.pr-3perc {
-  padding-right: 3%;
+.pr-7perc {
+  padding-right: 7%;
+}
+
+.pr-2perc {
+  padding-right: 2%;
+}
+
+.pr-4perc {
+  padding-right: 4%;
 }
 
 .ptb-50px {
@@ -153,7 +193,7 @@ img {
 }
 
 .row-1-ptb {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -165,17 +205,40 @@ img {
   margin-top: 35px;
 }
 
+.mt-50 {
+  margin-top: 50px;
+}
+
 .mb-70 {
   margin-bottom: 70px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }
 
 .mb-20 {
   margin-bottom: 20px;
 }
 
+.mtb-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.mtb-14 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
 .mtb-10 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.mtb-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .pt-120 {
@@ -199,6 +262,7 @@ img {
   height: 550px;
   background-image: url("images/hero.jpg");
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 
@@ -209,7 +273,7 @@ img {
   border-radius: 4px;
 }
 
-.mtb-25 {
+.mtbr-25 {
   margin: 25px 0 25px 25px;
 }
 
@@ -218,7 +282,7 @@ img {
 }
 
 .overlay {
-  background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%));
+  background: linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 25%));
   position: absolute;
   top: 0;
   right: 0;
@@ -238,12 +302,17 @@ img {
   margin-top: 0;
 }
 
-.mr-10 {
+.mr-40 {
   margin-right: 40px;
 }
 
 .pt-0 {
   padding-top: 0;
+}
+
+.mrl-0 {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .pb-0 {
@@ -252,6 +321,10 @@ img {
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.pl-10 {
+  padding-left: 15px;
 }
 
 .pos-abs {
@@ -274,4 +347,8 @@ img {
 
 .font-2em {
   font-size: 2em;
+}
+
+.font-weight-500 {
+  font-weight: 500;
 }
