@@ -55,8 +55,8 @@ input {
   text-transform: uppercase;
 }
 
-.line-ht-1p5em {
-  line-height: 2em;
+.line-ht-1p75em {
+  line-height: 1.75em;
 }
 
 .text-align-center {
@@ -76,7 +76,7 @@ input {
 }
 
 .ptb-60-20 {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -92,4 +92,8 @@ input {
 
 .text-gray {
   color: rgb(121 121 121);
+}
+
+.mb-30 {
+  margin-bottom: 25px;
 }
