@@ -18,8 +18,8 @@ var vehicle = {
   model: 'Pilot',
   year: '2004'
 };
-vehicle.color = 'silver';
-vehicle.isConvertible = false;
+vehicle['color'] = 'silver';
+vehicle['isConvertible'] = false;
 console.log('value of vehicle color: ', vehicle.color);
 console.log('value of vehicle isConvertible: ', vehicle.isConvertible);
 console.log('value of vehicle', vehicle);
