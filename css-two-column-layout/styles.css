@@ -10,13 +10,15 @@ body {
 }
 
 input {
+  margin-top: 10px;
   background-color: white;
   border: 2px solid rgb(211 82 75);
   color: rgb(211 82 75);
-  padding: 10px 50px;
-  font-size: 16px;
+  padding: 12px 52px;
+  font-size: 18px;
   font-family: Karla, sans-serif;
-  font-weight: 600;
+  font-weight: 510;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -54,9 +56,14 @@ input {
   font-weight: 600;
 }
 
+.karla-font-header {
+  font-family: Karla, sans-serif;
+  font-weight: 515;
+}
+
 .karla-font {
   font-family: Karla, sans-serif;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .all-caps {
@@ -89,19 +96,31 @@ input {
 }
 
 .prl-5perc {
-  padding-right: 3%;
+  padding-right: 6%;
   padding-left: 3%;
 }
 
 .prl-10perc {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
 .text-gray {
-  color: rgb(121 121 121);
+  color: rgb(80 80 80);
 }
 
 .mb-30 {
   margin-bottom: 25px;
+}
+
+.font-3p75em {
+  font-size: 3.75em;
+}
+
+p {
+  font-size: 19px;
+}
+
+.lspace-1p5px {
+  letter-spacing: 1px;
 }
