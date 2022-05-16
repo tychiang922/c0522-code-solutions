@@ -11,7 +11,7 @@ a {
 }
 
 .container {
-  max-width: 94%;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -149,8 +149,8 @@ a {
   padding-left: 7%;
 }
 
-.pr-2perc {
-  padding-right: 2%;
+.pr-5perc {
+  padding-right: 5%;
 }
 
 .ptb-50px {
