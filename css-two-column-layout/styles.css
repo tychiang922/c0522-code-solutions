@@ -1,0 +1,126 @@
+h1 {
+  font-size: 48px;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+input {
+  margin-top: 10px;
+  background-color: white;
+  border: 2px solid rgb(211 82 75);
+  color: rgb(211 82 75);
+  padding: 12px 52px;
+  font-size: 18px;
+  font-family: Karla, sans-serif;
+  font-weight: 510;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  flex-basis: calc(100%/2);
+}
+
+.col-4 {
+  flex-basis: calc(100%/4);
+}
+
+.col-4-three {
+  flex-basis: calc(300%/4);
+}
+
+.justify-center {
+  justify-content: center;
+  margin: auto;
+}
+
+.karla-font-heavy {
+  font-family: Karla, sans-serif;
+  font-weight: 600;
+}
+
+.karla-font-header {
+  font-family: Karla, sans-serif;
+  font-weight: 515;
+}
+
+.karla-font {
+  font-family: Karla, sans-serif;
+  font-weight: 100;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+.line-ht-1p75em {
+  line-height: 1.75em;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.pt-40 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.ptb-60-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.prl-5perc {
+  padding-right: 6%;
+  padding-left: 3%;
+}
+
+.prl-10perc {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.text-gray {
+  color: rgb(80 80 80);
+}
+
+.mb-30 {
+  margin-bottom: 25px;
+}
+
+.font-3p75em {
+  font-size: 3.75em;
+}
+
+p {
+  font-size: 19px;
+}
+
+.lspace-1p5px {
+  letter-spacing: 1px;
+}
