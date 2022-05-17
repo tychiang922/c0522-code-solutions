@@ -1,0 +1,79 @@
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 12px;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.phone-size {
+  width: 100%;
+}
+
+.icon-size {
+  width: 25%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-4 {
+  flex-basis: calc(100%/4);
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.font-barlow {
+  font-family: barlow, sans-serif;
+}
+
+.mtb-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.ptb-size {
+  padding-top: auto;
+  padding-bottom: 15px;
+}
+
+.prl-10perc {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.prl-size {
+  padding-right: 1%;
+  padding-left: 1%;
+}
