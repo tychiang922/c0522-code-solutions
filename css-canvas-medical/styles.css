@@ -1,0 +1,311 @@
+a {
+  text-decoration: none;
+}
+
+.blue-logo {
+  width: 40%;
+}
+
+.white-logo {
+  width: 26%;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  flex-basis: 100%;
+}
+
+.col-2 {
+  flex-basis: calc(100%/2);
+}
+
+.col-3 {
+  flex-basis: calc(100%/3);
+}
+
+.col-3-two {
+  flex-basis: calc(200%/3);
+}
+
+.col-4 {
+  flex-basis: calc(100%/4);
+}
+
+.col-flex {
+  flex-basis: auto;
+  margin: auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.font-17px {
+  font-size: 17px;
+}
+
+.font-18px {
+  font-size: 18px;
+}
+
+.font-40px-w250 {
+  font-size: 40px;
+  font-weight: 250;
+}
+
+.font-avenir {
+  font-family: avenir, sans-serif;
+}
+
+.font-tiemp {
+  font-family: "Tiempos Headline", sans-serif;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-19px {
+  font-size: 19px;
+}
+
+.font-21px {
+  font-size: 21px;
+}
+
+.txt-blue {
+  color: rgb(41 67 99);
+}
+
+.back-blue {
+  background-color: rgb(41 67 99);
+}
+
+.back-lightgray {
+  background-color: rgb(169 169 169 / 5%);
+}
+
+.back-darkgray {
+  background-color: rgb(82 82 81);
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-lightgray {
+  color: rgb(161 161 161);
+}
+
+.txt-gray {
+  color: rgb(112 112 112);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+  margin: auto;
+}
+
+.contact-button {
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+
+.ht-100 {
+  height: 100%;
+}
+
+.underline {
+  border-bottom: 1px solid rgba(196 196 196 /50%);
+}
+
+.pl-7perc {
+  padding-left: 7%;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.prl-6perc {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
+.prl-7perc {
+  padding-right: 7%;
+  padding-left: 7%;
+}
+
+.pr-2p5perc {
+  padding-right: 2.5%;
+}
+
+.ptb-50px {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.ptb-75px {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.row-1-ptb {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mtb-14 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.mtb-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.back-hero {
+  width: 100%;
+  height: 600px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.start-button {
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 18px 50px;
+  border-radius: 5px;
+}
+
+.width55p {
+  width: 55%;
+}
+
+.overlay {
+  background: linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 25%));
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.lh-2 {
+  line-height: 2em;
+}
+
+.lh-3p5 {
+  line-height: 3.5em;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.mrl-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.pl-10 {
+  padding-left: 15px;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.justify-start {
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.justify-end {
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.font-2em {
+  font-size: 2em;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.pl-row1 {
+  padding-left: 12%;
+}
