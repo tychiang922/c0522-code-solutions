@@ -12,12 +12,11 @@ function swapChars(firstIndex, secondIndex, string) {
   for (var stringIndex = 0; stringIndex < string.length; stringIndex++) {
     if (stringIndex === firstIndex) {
       result += string[secondIndex];
-      continue;
     } else if (stringIndex === secondIndex) {
       result += string[firstIndex];
-      continue;
+    } else {
+      result += string[stringIndex];
     }
-    result += string[stringIndex];
   }
   return result;
 }
