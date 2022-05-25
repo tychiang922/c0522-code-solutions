@@ -1,15 +1,14 @@
 var $span = document.querySelectorAll('span');
-var keyCount = 0;
-var type = 'grumpy wizards make toxic brew';
 var $button = document.querySelector('button');
 var $overlay = document.querySelector('.overlay');
+var keyCount = 0;
+var type = 'grumpy wizards make toxic brew';
 
 function key(event) {
   if (keyCount === $span.length) {
     $button.className = '';
     $overlay.className = 'overlay';
-  }
-  if (event.key === type[keyCount]) {
+  } else if (event.key === type[keyCount]) {
     $span[keyCount].className = 'green';
     if (keyCount + 1 !== $span.length) {
       $span[keyCount + 1].className = 'underline';
