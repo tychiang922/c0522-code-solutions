@@ -28,6 +28,12 @@ function titleCase(title) {
       result += titleSplit[titleSplitIndex][0].toUpperCase() + titleSplit[titleSplitIndex].substring(1).toLowerCase() + ' ';
     }
   }
+
+  var hyphenCheck = result.split('-');
+  result = hyphenCheck[0] + '-';
+  for (var hIndex = 0; hIndex < hyphenCheck.length; hIndex++) {
+    result = hyphenCheck[hIndex][0].toUpperCase() + hyphenCheck[hIndex].substring(1);
+  }
   // for (var titleSplitIndex = 1; titleSplitIndex < titleSplit.length; titleSplitIndex++) {
   //   minorWordsTally = 0;
   //   if (titleSplit[titleSplitIndex].toLowerCase() === 'javascript') {
