@@ -9,12 +9,17 @@ function titleCase(title) {
     minorTally = false;
     if (titleSplit[titleSplitIndex].toLowerCase().startsWith('javascript') === true) {
       result += 'JavaScript';
-      // if (titleSplit[titleSplitIndex][titleSplit[titleSplitIndex].length - 1] !== 't') {
-      //   result += titleSplit[titleSplitIndex][titleSplit[titleSplitIndex].length - 1];
-      // }
+      if (titleSplit[titleSplitIndex][titleSplit[titleSplitIndex].length - 1].toLowerCase() !== 't') {
+        result += titleSplit[titleSplitIndex][titleSplit[titleSplitIndex].length - 1];
+      }
+      result += ' ';
       continue;
     } else if (titleSplit[titleSplitIndex].toLowerCase().startsWith('api') === true) {
-      result += 'API ';
+      result += 'API';
+      if (titleSplit[titleSplitIndex][titleSplit[titleSplitIndex].length - 1].toLowerCase() !== 'i') {
+        result += titleSplit[titleSplitIndex][titleSplit[titleSplitIndex].length - 1];
+      }
+      result += ' ';
       continue;
     } else if (titleSplitIndex === 0) {
       result = titleSplit[0][0].toUpperCase() + titleSplit[0].substring(1).toLowerCase() + ' ';
