@@ -79,7 +79,7 @@ function renderPokemon(pokemon) {
 
   col3.appendChild(pCard);
   pCard.appendChild(img);
-  img.appendChild(pCardTxt);
+  pCard.appendChild(pCardTxt);
   pCardTxt.appendChild(h2);
   pCardTxt.appendChild(h3);
   pCardTxt.appendChild(p);
