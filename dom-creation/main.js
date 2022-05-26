@@ -62,6 +62,20 @@ function createElement(element) {
 }
 
 function renderPokemon(pokemon) {
+  /*
+  <div class="column-third">
+    <div class="pokemon-card">
+      <img src="images/pikachu.png">
+      <div class="pokemon-card-text">
+        <h2>Pikachu</h2>
+        <h3>#025</h3>ß
+        <p>
+          Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.
+        </p>
+      </div>
+    </div>
+  </div>
+  */
   var col3 = createElement('div');
   col3.setAttribute('class', 'column-third');
   var pCard = createElement('div');
