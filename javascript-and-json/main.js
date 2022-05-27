@@ -18,9 +18,9 @@ var bookList = [
 console.log('value of bookList: ', bookList);
 console.log('value of typeof bookList: ', typeof bookList);
 
-JSON.stringify(bookList);
-console.log('value of JSON.stringify(bookList): ', bookList);
-console.log('value of typeof JSON.stringify(bookList): ', typeof bookList);
+var bookListJSON = JSON.stringify(bookList);
+console.log('value of JSON.stringify(bookList): ', bookListJSON);
+console.log('value of typeof JSON.stringify(bookList): ', typeof bookListJSON);
 
 var student = '{"id": 961736, "name": "Tim Chiang"}';
 console.log('value of student: ', student);
