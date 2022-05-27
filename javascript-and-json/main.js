@@ -26,5 +26,5 @@ var student = '{"id": 961736, "name": "Tim Chiang"}';
 console.log('value of student: ', student);
 console.log('value of typeof student: ', typeof student);
 var parsedStudent = JSON.parse(student);
-console.log('value of JSON.parse(parsedStudent): ', parsedStudent);
-console.log('value of typeof JSON.parse(parsedStudent): ', typeof parsedStudent);
+console.log('value of JSON.parse(student): ', parsedStudent);
+console.log('value of typeof JSON.parse(student): ', typeof parsedStudent);
