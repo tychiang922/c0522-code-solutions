@@ -3,7 +3,7 @@ const $flashImage = document.querySelector('#flash-image');
 const $jokeForm = document.querySelector('#joke-form');
 
 const jokester = {
-  tellJoke: (setup, punchline) => {
+  tellJoke: function (setup, punchline) {
     $jokeForm.classList.add('d-none');
     const $introStatement = this.renderJokePhrase('Hey Flash...');
     this.appendJokePhrase($introStatement);
@@ -19,24 +19,23 @@ const jokester = {
           }, 2000);
       }, 2000);
   },
-  renderJokePhrase: phrase => {
+  renderJokePhrase: function (phrase) {
     const $phrase = document.createElement('h4');
     $phrase.textContent = phrase;
     $phrase.className = 'fade-in text-center';
     return $phrase;
   },
-  appendJokePhrase: $phrase => {
+  appendJokePhrase: function ($phrase) {
     $jokeContainer.append($phrase);
   }
 };
 
 const flash = {
   laughingUrl: 'images/flash-laugh.gif',
-  laugh: () => {
-    setTimeout(
-      () => {
-        $flashImage.setAttribute('src', this.laughingUrl);
-      }, 3000);
+  laugh: function () {
+    setTimeout(() => {
+      $flashImage.setAttribute('src', this.laughingUrl);
+    }, 3000);
   }
 };
 
