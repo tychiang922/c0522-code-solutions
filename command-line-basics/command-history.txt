@@ -1,0 +1,165 @@
+    1  git status
+    2  git add es6-template-literals
+    3  rm .git/index.lock
+    4  git status
+    5  git add es6-template-literals
+    6  git commit -m "Completed es6-template-literals1"
+    7  git push origin es6-template-literals
+    8  git switch main
+    9  git switch es6-arrow-functions
+   10  git switch main
+   11  git status
+   12  git add es6-arrow-functions
+   13  git commit -m "draft 3"
+   14  git switch main
+   15  git branch node-fs-readfile
+   16  git switch node-fs-readfile
+   17  cd node-fs-readfile
+   18  node read-dijkstra.js
+   19  node read-dijkstra.js
+   20  node read-dijkstra.js
+   21  node read-dijkstra.js
+   22  node read-dijkstra.js
+   23  node read-any.js dijkstra.js
+   24  node read-any.js dijkstra.txt
+   25  ls
+   26  node ready-any.js hipster-ipsum.txt
+   27  node read-any.js hipster-ipsum.txt
+   28  node read-any.js cunningham.txt
+   29  ls
+   30  node read-any.js hopper.txt
+   31  git status
+   32  cd ..
+   33  git status
+   34  git add node-fs-readfile
+   35  git commit -m "Completed node-fs-readfile"
+   36  git push origin node-fs-readfile
+   37  git switch main
+   38  git switch es6-arrow-functions
+   39  git status
+   40  git add es6-arrow-functions
+   41  git commit -m "Added functionality to all functions other then flash"
+   42  git switch main
+   43  git switch node-fs-readfile
+   44  git switch main
+   45  git branch node-fs-writefile
+   46  git switch node-fs-writefile
+   47  cd node-fs-writefile
+   48  node node-fs-writefile
+   49  ls
+   50  node node-fs-writefile
+   51  node node-fs-writefile
+   52  node node-fs-writefile
+   53  node node-fs-writefile
+   54  node node-fs-writefile
+   55  node write-rand.js
+   56  cat random.txt
+   57  node write-rand.js
+   58  node write-rand.js
+   59  node write-rand.js
+   60  node write-rand.js
+   61  node write-rand.js
+   62  cat random.txt
+   63  node write-rand.js
+   64  cat random.txt
+   65  node note-to-self.js
+   66  node note-to-self hello
+   67  cat note-txt
+   68  ls
+   69  cat note.txt
+   70  node note-to-self hello
+   71  cat note.txt
+   72  node note-to-self hello
+   73  cat note.txt
+   74  node write-rand.js
+   75  cat random.txt
+   76  node note-to-self.js Hello World
+   77  cat note.txt
+   78  git status
+   79  cd ..
+   80  git status
+   81  git add node-fs-writefile
+   82  git commit -m "Completed node-fs-writefile"
+   83  git push origin node-fs-writefile
+   84  node note-to-self.js 'Hello World'
+   85  node note-to-self.js HelloWORLD
+   86  cd node-fs-writefile
+   87  node note-to-self 'Hello World'
+   88  cat note.txt
+   89  node write-rand
+   90  cat random.txt
+   91  git status
+   92  cd ..
+   93  git add node-fs-writefile
+   94  git commit -m "random txt change"
+   95  git switch main
+   96  git switch es6-arrow-functions
+   97  git status
+   98  git push origin es6-arrow-functions
+   99  git switch main
+  100  git branch command-line-basics
+  101  git switch command-line-basics
+  102  cd command-line-basics
+  103  man man
+  104  man cat
+  105  man cat
+  106  cat laziness.txt
+  107  cat impatience.txt
+  108  cat hubris.txt
+  109  cat laziness.txt impatience.txt hubris.txt
+  110  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  111  man ls
+  112  ls
+  113  ls -a
+  114  ls -F
+  115  man ls
+  116  ls lfz-staff/
+  117  ls lfz-staff/ -a
+  118  ls lfz-staff/ -F
+  119  man ls
+  120  ls -aF lfz-staff > lfz-staff/contents.txt
+  121  cat lfz-staff/contents.txt
+  122  man pwd
+  123  pwd
+  124  pwd > i-was-here.txt
+  125  ls
+  126  cat i-was-here.txt
+  127  man echo
+  128  echo 'Hello, World!'
+  129  echo 'Hello, World!' > hello.txt
+  130  ls
+  131  cat hello.txt
+  132  man touch
+  133  touch tag-youre-it.txt
+  134  man touch
+  135  touch snoot/boop.txt
+  136  ls snoot/
+  137  man mkdir
+  138  mkdir parent
+  139  ls
+  140  man mkdir
+  141  man mkdir
+  142  mkdir -p parent/child
+  143  cat parent
+  144  cat parent/
+  145  ls
+  146  mkdir parent/child/grandchild
+  147  touch parent/child/grandchild/.gitkeep
+  148  ls -a parent/child/grandchild
+  149  man mv
+  150  man mv
+  151  mv pokiemans pokemon
+  152  ls
+  153  man rm
+  154  man rm
+  155  rm lol.txt
+  156  rm -r kill-me/
+  157  ls
+  158  man cp
+  159  cp and-then.txt no-and-then.txt
+  160  ls
+  161  cat and-then.txt
+  162  cat no-and-then.txt
+  163  man history
+  164  history
+  165  history > command-history.txt
