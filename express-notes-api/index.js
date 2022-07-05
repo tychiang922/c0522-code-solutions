@@ -4,6 +4,9 @@ const app = express();
 const errorMsg = {
   error: 'id must be a postive integer'
 };
+const errorMsgEmpty = {
+  error: 'content is a required field'
+};
 const errorUnexpected = {
   error: 'An unexpected error occurred.'
 };
@@ -38,9 +41,6 @@ fs.readFile('data.json', 'utf-8', (err, txt) => {
   app.use(express.json());
   app.post('/api/notes', (req, res) => {
     if (Object.keys(req.body).length === 0) {
-      const errorMsgEmpty = {
-        error: 'content is a required field'
-      };
       res.status(400).send(errorMsgEmpty);
     } else {
       req.body.id = txtParsed.nextId;
@@ -77,5 +77,30 @@ fs.readFile('data.json', 'utf-8', (err, txt) => {
         res.sendStatus(204);
       }
     });
+  });
+  app.put('/api/notes/:id', (req, res) => {
+    const id = req.params.id;
+    const idString = (req.params.id).toString();
+    if (id < 0) {
+      res.status(400).send(errorMsg);
+    } else if (Object.keys(req.body).length === 0) {
+      res.status(400).send(errorMsgEmpty);
+    } else if (txtParsed.notes[idString] === undefined) {
+      const errorMissingMsg = {
+        error: `cannot find note with id ${id}`
+      };
+      res.status(404).send(errorMissingMsg);
+    } else {
+      txtParsed.notes[id].content = req.body.content;
+      const txtParsedJSON = JSON.stringify(txtParsed, null, 2);
+      fs.writeFile('data.json', txtParsedJSON, err => {
+        if (err) {
+          console.error(err);
+          res.status(500).send(errorUnexpected);
+        } else {
+          res.status(200).send(txtParsed.notes[id]);
+        }
+      });
+    }
   });
 });
