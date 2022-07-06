@@ -33,9 +33,10 @@ fs.readFile('data.json', 'utf-8', (err, txt) => {
         error: `cannot find note with id ${id}`
       };
       res.status(404).send(errorMissingMsg);
+    } else {
+      const notesSpecific = txtParsed.notes[id];
+      res.status(200).send(notesSpecific);
     }
-    const notesSpecific = txtParsed.notes[id];
-    res.status(200).send(notesSpecific);
   });
 
   app.use(express.json());
