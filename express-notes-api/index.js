@@ -10,10 +10,10 @@ const errorMsgEmpty = {
 const errorUnexpected = {
   error: 'An unexpected error occurred.'
 };
-app.listen(3000, () => {
-});
 
 fs.readFile('data.json', 'utf-8', (err, txt) => {
+  app.listen(3000, () => {
+  });
   if (err) throw err;
   const txtParsed = JSON.parse(txt);
   const notesArray = [];
@@ -40,7 +40,7 @@ fs.readFile('data.json', 'utf-8', (err, txt) => {
 
   app.use(express.json());
   app.post('/api/notes', (req, res) => {
-    if (Object.keys(req.body).length === 0) {
+    if (req.body.content === undefined) {
       res.status(400).send(errorMsgEmpty);
     } else {
       req.body.id = txtParsed.nextId;
@@ -83,7 +83,7 @@ fs.readFile('data.json', 'utf-8', (err, txt) => {
     const idString = (req.params.id).toString();
     if (id < 0) {
       res.status(400).send(errorMsg);
-    } else if (Object.keys(req.body).length === 0) {
+    } else if (req.body.content === undefined) {
       res.status(400).send(errorMsgEmpty);
     } else if (txtParsed.notes[idString] === undefined) {
       const errorMissingMsg = {
