@@ -12,15 +12,7 @@ const names = [
   'Donna'
 ];
 
-const evenNumbers = numbers.filter(isEven => {
-  return isEven % 2 === 0;
-});
-const overFive = numbers.filter(number => {
-  return number > 5;
-});
-const startWithE = names.filter(eNames => {
-  return eNames.startsWith('E');
-});
-const haveD = names.filter(dIncluded => {
-  return dIncluded.toLowerCase().includes('d');
-});
+const evenNumbers = numbers.filter(isEven => isEven % 2 === 0);
+const overFive = numbers.filter(number => number > 5);
+const startWithE = names.filter(eNames => eNames.startsWith('E'));
+const haveD = names.filter(dIncluded => dIncluded.toLowerCase().includes('d'));
