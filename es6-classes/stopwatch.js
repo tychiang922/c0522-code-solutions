@@ -1,9 +1,5 @@
 /* exported Stopwatch */
 
-// function Stopwatch(startTimeInSeconds) {
-//   this.elapsedSeconds = startTimeInSeconds;
-// }
-
 class Stopwatch {
   constructor(startTimeInSeconds) {
     this.elapsedSeconds = startTimeInSeconds;
