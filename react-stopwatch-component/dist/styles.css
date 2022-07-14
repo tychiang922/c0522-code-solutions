@@ -1,0 +1,27 @@
+.timer {
+  margin-top: 25vh;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  border: 8px solid black;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  padding-top: 37%;
+  vertical-align: middle;
+  height: 100%;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+i {
+  margin-top: 2.5rem;
+  font-size: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
