@@ -8,12 +8,12 @@ export default class StopWatch extends React.Component {
       play: false
     };
     this.handleClick = this.handleClick.bind(this);
+    this.timerReset = this.timerReset.bind(this);
   }
 
   handleClick() {
     if (!this.state.play) {
       this.setState({ play: true });
-      this.setState({ timer: 0 });
       this.timerID = setInterval(
         () => this.setState(state => ({
           timer: state.timer + 1
@@ -26,11 +26,15 @@ export default class StopWatch extends React.Component {
     }
   }
 
+  timerReset() {
+    this.setState({ timer: 0 });
+  }
+
   render() {
     if (!this.state.play) {
       return <div>
         <div className='row'>
-          <div className='timer'>
+          <div onClick={this.timerReset} className='timer'>
             <p>{this.state.timer}</p>
           </div>
         </div>
