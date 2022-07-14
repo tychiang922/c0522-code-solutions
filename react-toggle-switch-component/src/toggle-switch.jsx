@@ -15,12 +15,18 @@ export default class ToggleSwitch extends React.Component {
 
   render() {
     if (this.state.isToggled) {
-      return <div className='card green-back'>
-      <div onClick={this.toggle} className='switch right'></div>
+      return <div onClick={this.toggle} className='row'>
+      <div className='card green-back'>
+      <div className='switch right'></div>
+      </div>
+      <p>ON</p>
     </div>;
     } else {
-      return <div className='card gray-back'>
-      <div onClick={this.toggle} className='switch left'></div>
+      return <div onClick={this.toggle} className='row'>
+        <div className='card gray-back'>
+      <div className='switch left'></div>
+    </div>
+    <p>OFF</p>
     </div>;
     }
   }

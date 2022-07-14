@@ -5,7 +5,7 @@
   height: 5rem;
   width: 5rem;
   margin: 0;
-  border: 1px solid black;
+  border: 5px solid black;
 }
 
 .right {
@@ -18,8 +18,8 @@
 
 .card {
   position: relative;
-  height: 5rem;
-  width: 10rem;
+  height: 5.5rem;
+  width: 13rem;
   border-radius: 5rem;
   border: 5px solid black;
   margin: 0;
@@ -31,4 +31,16 @@
 
 .gray-back {
   background-color: gray;
+}
+
+.row {
+  display: flex;
+}
+
+p {
+  width: 10rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
 }
