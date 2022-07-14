@@ -1,0 +1,46 @@
+.switch {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  margin: 0;
+  border: 5px solid black;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.card {
+  position: relative;
+  height: 5.5rem;
+  width: 13rem;
+  border-radius: 5rem;
+  border: 5px solid black;
+  margin: 0;
+}
+
+.green-back {
+  background-color: green;
+}
+
+.gray-back {
+  background-color: gray;
+}
+
+.row {
+  display: flex;
+}
+
+p {
+  width: 10rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
