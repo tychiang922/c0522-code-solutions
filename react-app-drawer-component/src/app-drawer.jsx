@@ -11,39 +11,37 @@ export default class AppDrawer extends React.Component {
 
   menuClick() {
     this.setState({ showMenu: true });
-
   }
 
-  menu() {
+  modal(props) {
     return (
-      <div className='col-2 menu-bar'>
-        <a className='menu' href='#'>Menu</a>
-        <a className='links' href='#'>About</a>
-        <a className='links' href='#'>Get Started</a>
-        <a className='links' href='#'>Sign In</a>
+      <div>
+        <div onClick={props.onClose} className={`modal ${props.show ? 'show' : ''}`}>
+        </div>
+        <div className={`modal-content ${props.show ? 'fly' : ''}`}>
+          <div className='col-2 menu-bar'>
+            <h1>Menu</h1>
+            <div className='row'>
+              <a onClick={props.onClose} className='links' href='#'>About</a>
+            </div>
+            <div className='row'>
+              <a onClick={props.onClose} className='links' href='#'>Get Started</a>
+            </div>
+            <div className='row'>
+              <a onClick={props.onClose} className='links' href='#'>Sign In</a>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 
   render() {
-    if (!this.state.showMenu) {
-      return (
-      <i onClick={this.menuClick} className="fa-solid fa-bars"></i>
-      );
-    } else {
-      <div>
-        <Modal />
-        <Menu />
-        <i className="fa-solid fa-bars"></i>
-      </div>;
-    }
-  }
-}
-
-class Modal extends React.Component {
-  render() {
     return (
-      <div className='modal'></div>
+      <div>
+        <i onClick={this.menuClick} className="fa-solid fa-bars"></i>
+        <this.modal onClose={() => this.setState({ showMenu: false })} show={this.state.showMenu}/>
+      </div>
     );
   }
 }
