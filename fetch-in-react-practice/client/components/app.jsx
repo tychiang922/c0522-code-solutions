@@ -31,8 +31,8 @@ export default class App extends React.Component {
       .then(res => res.json())
       .then(data => {
         const copy = this.state.todos.map(numbers => numbers);
-        copy.concat(data);
-        this.setState({ todos: copy });
+        const copyConcat = copy.concat(data);
+        this.setState({ todos: copyConcat });
       })
       .catch(error => console.error('Error: ', error));
 
@@ -55,13 +55,30 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
+    let isCompletedObj;
+    let index;
     const copy = this.state.todos.map(copy => copy);
-    console.log(copy);
     for (let cIndex = 0; cIndex < copy.length; cIndex++) {
       if (todoId === copy[cIndex].todoId) {
-        console.log('success');
+        index = cIndex;
+        const isCompletedStatus = copy[cIndex].isCompleted;
+        isCompletedObj = { isCompleted: !isCompletedStatus };
       }
     }
+    fetch(`/api/todos/${todoId}`,
+      {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(isCompletedObj)
+      })
+      .then(res => res.json())
+      .then(data => {
+        copy[index] = data;
+        this.setState({ todos: copy });
+      })
+      .catch(err => console.error('error', err));
     /**
      * Find the index of the todo with the matching todoId in the state array.
      * Get its "isCompleted" status.
