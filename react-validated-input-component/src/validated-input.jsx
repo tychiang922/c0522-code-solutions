@@ -20,7 +20,7 @@ export default class ValidatedInput extends React.Component {
   iconHandler(props) {
     if (props.charLength <= 8) {
       return (
-        <i className="fa-solid fa-xmark"></i>
+        <i className="fa-solid fa-xmark incorrect"></i>
       );
     } else {
       return (
@@ -32,11 +32,11 @@ export default class ValidatedInput extends React.Component {
   errorMsgHandler(props) {
     if (props.charLength === 0) {
       return (
-        <p>Please input a password</p>
+        <p className="incorrect">A password is required.</p>
       );
     } else if (props.charLength <= 8) {
       return (
-        <p>Password must be longer then 8 characters.</p>
+        <p className="incorrect">Your password is too short.</p>
       );
     } else {
       return null;
@@ -47,12 +47,12 @@ export default class ValidatedInput extends React.Component {
     return (
       <form>
         <label>
-          Password
-          <div>
+          <p className="title">Password</p>
+          <div className="row">
             <input onChange={this.handlePasswordChange} value={this.state.password} type='password' name='password'></input>
-            <iconHandler charLength={this.state.passwordLength} />
-            <this.errorMsgHandler charLength={this.state.passwordLength} />
+            <this.iconHandler charLength={this.state.passwordLength} />
           </div>
+            <this.errorMsgHandler charLength={this.state.passwordLength} />
         </label>
       </form>
     );
