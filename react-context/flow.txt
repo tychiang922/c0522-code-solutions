@@ -1,0 +1,35 @@
+User can sign up
+Client first checks whether the page is "sign-in" or "sign-up" to display the correct details to the user
+On sign-up user fills in username and password boxes
+Every time the user inputs a character into the input boxes authform class setstate of either username or password to the changes made to the input boxes
+When user clicks register, AuthForm.submit is fired which sends a post fetch request to the server at /api/auth/sign-up
+Server checks whether a username or password was provided and then passes the password to argon2 which returns user's password hashed
+The hashed password and user's username is then inserted into the database
+Server sends confirmation to client indicating fetch request to change "action" to sign-in which renders a sign-in page
+
+User can sign in
+Client checks whether page is currently "sign-in" or "sign-up" to display correct page
+While user inputs username and password boxes, client sets User and Password states according to inputs
+On submition, server sends a post fetch request to the server at /api/auth/sign-in
+Server checks whether username and password is provided
+Server gets userId and hashedPassword from database based on username match
+Server verifies hashedpassword with given password through argon2
+  If password does not match, server will return an error
+Once verified, a token is generated through jwt.sign and an object containing the token and the user data(userId, username) is returned to the client
+Client side receives an object with token/user and passes it into onSignIn which calls the handleSignIn method of the App class
+handleSignIn creates a user and token variable from the object and token is stored into local storage while user is stored in state
+
+User can stay signed in
+App class checks state.isAuthorizing and because at the start it returns true, will jump to componentDidMount
+In componentDidMount, token from localstorage is pulled and assigned to token variable and checked whether it exists. If null, will assign null to user property and if true, token will be decoded through jwt.
+decoded token will be assigned to user property of state and isAuthorizing will be set to true allowing render to run again.
+render of app class runs again and fires renderPage method which checks the current route from state. Route determines what page to load.
+Because signed in, path will be '' and will run home class
+Home class checks if user is a falsey value but because token already taken will skip redirecting to sign-in page and instead will return the giphy content
+
+User can sign out
+User clicks sign out on navbar of page
+Fires handleSignOut event
+handleSignOut function removes token from localstorage and set user state to null
+App Class renders again based on new user value
+Because path hasn't changed and is still '', renderPage goes to home class but because user is a falsey value, client redirects page to sign-in page using the redirect class
